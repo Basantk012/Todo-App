@@ -1,0 +1,74 @@
+
+.outer-form {
+    position: relative;
+    height: fit-content; 
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f3f4f6; 
+    padding: 20px;
+    
+}
+
+
+.inner-form {
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1); 
+    width: 100%;
+    max-width: 500px; 
+    transition: all 0.3s ease-in-out;
+}
+
+
+.inner-form label {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+/* Textarea styling */
+.inner-form textarea {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    margin-bottom: 20px;
+    resize: vertical; 
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Focus effect on textareas */
+.inner-form textarea:focus {
+    border-color: #007bff;
+    box-shadow: 0px 0px 8px rgba(0, 123, 255, 0.3);
+    outline: none; /* Remove default focus outline */
+}
+
+/* Button styling */
+.inner-form button {
+    background-color: #007bff; /* Blue color */
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 1rem;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    width: 100%;
+}
+
+/* Button hover effect */
+.inner-form button:hover {
+    background-color: #0056b3; /* Darker blue */
+    transform: scale(1.05); /* Slight scale up on hover */
+}
+
+/* Button focus effect */
+.inner-form button:focus {
+    outline: none;
+}

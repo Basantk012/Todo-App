@@ -1,0 +1,12 @@
+<div class="single_todo" [ngClass]="todo.active ? 'not-strike' : 'strike'">
+    <h3>{{todo.title}}</h3>
+    <p>{{todo.description}}</p>
+    <!-- <p>{{todo.active}}</p> -->
+     <div class="button">
+    <button class="btn btn-danger" (click) = "onClick(todo)" >Delete</button>
+    <button class="btn btn-info"  (click) = "onMarkAsDone(todo)" > {{ todo.active ? 'Mark as Done' : 'Mark as Undone' }}</button>
+     </div>
+    
+</div>
+
+

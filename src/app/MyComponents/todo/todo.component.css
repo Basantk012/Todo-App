@@ -1,0 +1,62 @@
+.todo-outer {
+    position: relative;
+    top: 8rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: auto;
+    width: 100%;
+    margin: 1rem 0;
+    padding: 1rem;
+    box-sizing: border-box;
+}
+
+.todo-outer .add-todo {
+    width: 48%; /* Take 50% minus small gap */
+    margin: 0;
+    padding: 1rem;
+    background-color: #f9f9f9;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.todo-outer .todo-list {
+    width: 48%; /* Take 50% minus small gap */
+    margin: 0;
+    padding: 1rem;
+    background-color: #fff;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.todo-list h2 {
+    text-align: center; /* Center the heading */
+    margin-bottom: 1rem; /* Optional: Adds some space below the heading */
+}
+
+.todo-list .todo-inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.todo-inner .button {
+    margin: 0 0.5rem !important;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .todo-outer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .todo-outer .add-todo,
+    .todo-outer .todo-list {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+}

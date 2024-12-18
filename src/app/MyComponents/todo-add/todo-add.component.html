@@ -1,0 +1,20 @@
+<div class="outer-form">
+    <div class="inner-form">
+        <div class="fix">
+            <div class="title">
+                <label for="title">Title</label><br>
+                <textarea name="title" id="title" [(ngModel)]="todo.title" placeholder="Enter your title here"></textarea>
+            </div>
+           
+            <div class="description">
+                <label for="description">Description</label><br>
+                <textarea name="description" id="description" [(ngModel)]="todo.description" placeholder="Enter your description here"></textarea>
+            </div>
+        </div>
+        
+        
+        <button (click)="onAddTodo(todo)">Add Todo</button>
+        
+    </div>
+</div>
+

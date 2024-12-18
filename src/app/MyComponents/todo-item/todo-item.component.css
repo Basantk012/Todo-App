@@ -1,0 +1,33 @@
+.single_todo{
+    width: 100%;
+}
+
+.single_todo .button{
+    display: flex;
+    flex-direction: row;
+}
+
+.strike h3{
+    text-decoration: line-through;
+}
+
+.strike p{
+    text-decoration: line-through;
+}
+
+.single_todo button{
+    margin: 0 1rem 0 0;
+}
+
+
+@media (max-width: 349px) {
+    .single_todo .button {
+        display: flex;
+        flex-direction: column; /* Stack buttons vertically */
+        /* margin-bottom: 1rem !important; */
+    }
+    .single_todo .button button {
+        /* display: block;  */
+        margin-bottom: 1rem;
+    }
+}

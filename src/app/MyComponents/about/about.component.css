@@ -1,0 +1,57 @@
+.outer {
+    position: relative;
+    top:3rem;
+    display: flex;
+    background-color: aqua;
+    height: 93vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.outer .inner {
+    width: 40%; 
+    height: fit-content;
+    background-color: aliceblue;
+    color: black;
+    font-weight: 500;
+    border: 2px solid blueviolet;
+    border-radius: 1rem;
+    padding: 1rem;
+    margin: 1rem;
+    text-align: justify;
+    box-shadow: 0 0 5px 2px blueviolet; 
+    box-sizing: border-box; /* Ensures consistent sizing when padding changes */
+    transition: scale 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.outer .inner:hover { 
+    box-shadow: 0 0 5px 4px blueviolet; 
+    scale: 1.025;
+    border-radius: 1.25rem;
+}
+
+/* Responsive Styling */
+@media (max-width: 1200px) {
+    .outer .inner {
+        width: 45%; /* Increase width percentage */
+    }
+}
+
+@media (max-width: 992px) {
+    .outer .inner {
+        width: 60%; /* Further increase width percentage */
+    }
+}
+
+@media (max-width: 768px) {
+    .outer .inner {
+        width: 80%; /* Near full width for smaller screens */
+    }
+}
+
+@media (max-width: 576px) {
+    .outer .inner {
+        width: 95%; /* Almost full width for very small screens */
+    }
+}
